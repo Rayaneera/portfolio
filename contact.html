@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <section class="container-fluid">
             <a class="navbar-brand" href=""> <img src="assets/logo.png" alt="logo" height="200"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,9 +28,10 @@
         <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item" type="button"> <a class="nav-link active" href="index.html">home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="portfolio.html">portfolio</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">portfolio
+                        aria-expanded="false">project
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="project.html">project 1</a></li>
@@ -41,8 +42,6 @@
                         <li><a class="dropdown-item" href="project.html">project 6</a></li>
                     </ul>
                 </li>
-                <li class="nav-item" type="button"><a class="nav-link active" href="portfolio.html">portfolio</a></li>
-                <li class="nav-item" type="button"> <a class="nav-link active" href="project.html">project</a></li>
                 <li class="nav-item" type="button"><a class="nav-link active" href="contact.html">contact</a> </li>
             </ul>
         </div>
@@ -56,20 +55,20 @@
         <fieldset class="row g-3 mb-3 mt-3">
         <form action="#" method="post" class=" p-5">
             <div class="mb-3">
-            <label for="voornaam" class="form-control">voornaam:</label>
-            <input type="text" id="voornaam" name="voornaam" required>
+            <label for="voornaam">voornaam</label>
+            <input type="text" id="voornaam" name="voornaam" class="form-control" required>
             </div>
             <div class="mb-3">
-            <label for="achternaam" class="form-control">achternaam:</label>
-            <input type="text" id="achternaam" name="achternaam" required>
+            <label for="achternaam">achternaam</label>
+            <input type="text" id="achternaam" name="achternaam" class="form-control" form required>
             </div>
             <div class="mb-3">
-            <label for="e-mail" class="form-control">e-mail:</label>
-            <input type="e-mail" id="e-mail" name="e-mail" required>
+            <label for="e-mail">e-mail</label>
+            <input type="e-mail" id="e-mail" name="e-mail" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label for="bericht" class="form-control">bericht:</label>
-                <textarea name="bericht" id="bericht" rows=""></textarea>
+                <label for="bericht">bericht</label>
+                <textarea name="bericht" id="bericht" rows="4" class="form-control"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">verzend</button>
         </form>

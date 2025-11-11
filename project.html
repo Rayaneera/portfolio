@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <section class="container-fluid">
             <a class="navbar-brand" href=""> <img src="assets/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,9 +28,10 @@
         <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item" type="button"> <a class="nav-link active" href="index.html">home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="portfolio.html">portfolio</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">portfolio
+                        aria-expanded="false">project
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item active" href="project.html">project 1</a></li>
@@ -41,56 +42,48 @@
                         <li><a class="dropdown-item active" href="project.html">project 6</a></li>
                     </ul>
                 </li>
-                <li class="nav-item" type="button"><a class="nav-link active" href="portfolio.html">portfolio</a></li>
-                <li class="nav-item" type="button"> <a class="nav-link active" href="project.html">project</a></li>
                 <li class="nav-item" type="button"><a class="nav-link active" href="contact.html">contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
+    <main class="container my-5">
+        <div class="row">
         <section class="container-fluid p-0">
             <img src="assets/project1.png" class="img-fluid w-100" alt="sfeerbeeld"
                 style="max-height: 400px; object-fit: cover;">
         </section>
-
-        <section class="container text-center my-5">
-            <div class="row mb-5">
                 <article class="col-12 p-3" type="button"><img src="assets/project1.png" alt="project1"
                         class="img-fluid rounded shadow float-start"
                         style="height: 200px; width: 20%; object-fit: cover;">
                 </article>
-                <article class="col-12 col-lg-6 p-3 text-start"> 
+                <article class="col-12 col-lg-4 p-3 text-start"> 
                     <h3>beschrijving</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit corporis nostrum rem porro animi quisquam aspernatur adipisci enim quis necessitatibus!</p>
                 </article>
 
-                <button class="col-12 p-3" type="button"><img src="assets/project1.png" alt="project1"
-                        class="img-fluid rounded shadow float-start mx-auto d-block" 
+                <article class="col-12 p-3" type="button"><img src="assets/project1.png" alt="project1"
+                        class="img-fluid rounded shadow float-start " 
                         style="height: 200px; width: 20%; object-fit: cover;">
-                </button>
+                </article>
                 <article class="col-12 col-lg-6 p-3 text-start">
                     <h3>info</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim consectetur beatae impedit voluptas, maiores quidem voluptate repudiandae! Deserunt, consequuntur excepturi? Eveniet doloremque, laboriosam eos quidem quia officiis nobis perferendis maxime!</p>
                 </article>
 
-                <h3 class="col-12 col-md-6 text-end"> overige projecten</h3>
-                <div class="container text-center my-5">
-        <div class="row">
-        <button 
-        class="col-12 col-md-4 p-3" type="button"><img src="assets/project2.png" alt="project2" class="img-fluid w-100 rounded" 
-        ></button>
-        <button 
-        class="col-12 col-md-4 p-3" type="button"><img src="assets/project3.png" alt="project3" class="img-fluid w-100 rounded" 
-        ></button>
-        <button
-         class="col-12 col-md-4 p-3" type="button"><img src="assets/project4.png" alt="project4" class="img-fluid w-100 rounded" 
-         ></button>
+                <aside class="col-12 col-lg-4 border-start text-center">
+                    <h2 class="mb-4 text-uppercase">overige projecten</h2>
+        <article 
+        class="mb-3" type="button"><img src="assets/project2.png" alt="project2" class="img-fluid w-100 rounded" 
+        ></article>
+        <article 
+        class="mb-3" type="button"><img src="assets/project3.png" alt="project3" class="img-fluid w-100 rounded" 
+        ></article>
+        <article
+         class="mb-3" type="button"><img src="assets/project4.png" alt="project4" class="img-fluid w-100 rounded" 
+         ></article>
          </div>
-    </div>
-            </div>
-        </section>
+            </aside>
+        </div>
     </main>
-    <aside>
-    </aside>
 </body>
