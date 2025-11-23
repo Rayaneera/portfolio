@@ -1,9 +1,11 @@
 .donkerblauw {
   color: #133340;
 }
+
 .paars {
   color: #592348;
 }
+
 .grijs {
   color: #D9D9D9;
 }
@@ -12,22 +14,27 @@
   background-color: #133340;
 }
 
-html, body{
-    background-color: #D9D9D9;
-    color: #133340;
+html,
+body {
+  background-color: #D9D9D9;
+  color: #133340;
 }
 
 a {
-    color: #592348;
+  color: #592348;
 }
 
 a:hover {
   color: #133340;
 }
 
-h1, h2, h3, H4 {
+h1,
+h2,
+h3,
+H4 {
   color: #592348;
 }
+
 .btn-primary {
   background-color: #592348;
 }
@@ -35,8 +42,12 @@ h1, h2, h3, H4 {
 .btn-primary:hover {
   background-color: #133340;
 }
+
 p {
   color: #592348
-  
+}
 
+#map {
+  height: 180px;
+  width: 100%;
 }
