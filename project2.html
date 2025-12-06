@@ -13,106 +13,142 @@
         defer>
         </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <section class="container-fluid">
-            <a class="navbar-brand" href="index.html"> <img src="assets/logo.png" alt="logo"></a>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="logo" height="60">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="toggle navigation"><span class="navbar-toggler-icon "></span></button>
+                aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item" type="button">
+                        <a class="nav-link " href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="portfolio.html">portfolio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">project</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="project1.html">project 1</a></li>
+                            <li><a class="dropdown-item" href="project2.html">project 2</a></li>
+                            <li><a class="dropdown-item" href="project3.html">project 3</a></li>
+                            <li><a class="dropdown-item" href="project4.html">project 4</a></li>
+                            <li><a class="dropdown-item" href="project5.html">project 5</a></li>
+                            <li><a class="dropdown-item" href="project6.html">project 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item" type="button"> <a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Project
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
-                        <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
-                        <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
-                        <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
-                        <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
-                        <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item" type="button"><a class="nav-link active" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
     </nav>
+    <div class="container">
+        <div class="row g-4">
 
-    <main class="container my-5">
-        <div class="row">
-            <article class="col-12 p-0">
-                <img src="assets/project2.jpg" class="img-fluid w-100" alt="sfeerbeeld"
-                    style="max-height: 400px; object-fit: cover;">
-            </article>
-            <article class="col-12 p-3" type="button"><img src="assets/project2.jpg" alt="project1"
-                    class="img-fluid rounded shadow float-start" style="height: 200px; width: 20%; object-fit: cover;">
-            </article>
-            <article class="col-12 col-lg-6 p-3 text-start">
-                <h1>Werken met Moderne Besturingssystemen</h1>
-                <h3>Verdiepend Onderzoek naar Besturingssysteembeheer en Prestatieanalyse</h3>
-                <p>Bij dit project verdiepte ik me in de werking en opbouw van verschillende besturingssystemen. Ik
-                    begon met het analyseren van de basisarchitectuur: kernel, drivers, processen en geheugenbeheer.
-                    Daarna vergeleek ik hoe Windows, Linux en macOS deze onderdelen op hun eigen manier aanpakken.
-                    Vooral het verschil tussen de monolithische kernel van Linux en de hybride kernel van Windows vond
-                    ik boeiend. Tijdens het installeren van de systemen lette ik op partities, bestandssystemen en
-                    bootloaders. Ik testte hoe elk besturingssysteem omgaat met hardwaredetectie en systeemupdates. Ook
-                    onderzocht ik welke tools en functies ze aanbieden voor beheer, zoals PowerShell, systemctl of de
-                    macOS Terminal. Door meerdere virtuele machines op te zetten, kon ik veilig experimenteren en
-                    systemen naast elkaar vergelijken. Dit eerste deel legde de technische fundamenten bloot en gaf een
-                    duidelijk inzicht in hoe een OS eigenlijk functioneert.</p>
+            <figure class="col-12 p-0">
+                <img src="assets/project3.jpg" class="img-fluid w-100" alt="sfeerbeeld"
+                    style="max-height: 250px; object-fit: cover;">
+                    <figcaption class="h6 small mt-2 text-start">&copy; pexels.com</figcaption>
+            </figure>
+
+
+            <article class="col-12">
+                <h1>Moderne besturingssystemen</h1>
             </article>
 
-            <article class="col-12 p-3" type="button"><img src="assets/project22.jpg" alt="project1"
-                    class="img-fluid rounded shadow float-start " style="height: 200px; width: 20%; object-fit: cover;">
-            </article>
-            <article class="col-12 col-lg-6 p-3 text-start">
-                <h3>Praktisch Systeembeheer, Prestatiemetingen en Vergelijkende Analyse van Besturingssystemen</h3>
-                <p>Na het analyseren van de architectuur richtte ik me op de praktische beheertaken binnen elk
-                    besturingssysteem. Ik begon met het configureren van gebruikersrechten en security-policies om te
-                    zien hoe strikt elk platform hiermee omgaat. Daarna onderzocht ik de netwerkstacks en testte ik hoe
-                    DHCP, DNS en routing in elk systeem worden aangestuurd. Ik vergeleek hun logging-mechanismen en keek
-                    vooral naar welke tools het meest inzicht gaven tijdens foutanalyse. Vervolgens voerde ik
-                    performance-tests uit om CPU-planning, I/O-afhandeling en geheugengebruik te meten. Ik merkte
-                    duidelijke verschillen in hoe efficiënt Linux processen behandelt in vergelijking met Windows onder
-                    zware belasting. Ook dook ik in virtualisatie-opties zoals Hyper-V, VirtualBox en QEMU/KVM om te
-                    zien welk OS de beste ondersteuning bood. Daarna documenteerde ik alle configuraties zodat ik ze
-                    later kon reproduceren of aanpassen. Tot slot evalueerde ik de stabiliteit, flexibiliteit en
-                    beheergemak van elk systeem in een realistische werkomgeving. Dit deel gaf me een diepgaand begrip
-                    van OS-beheer en maakte de verschillen tussen de platformen glashelder.</p>
-            </article>
 
-            <aside class="col-12 col-lg-3 offset-lg-3 border-start text-center">
-                <h2 class="mb-4 text-uppercase">Overige projecten</h2>
-                <a href="project4.html">
-                    <article class="mb-3" type="button"><img src="assets/project4.jpg" alt="project44"
-                            class="img-fluid w-100 rounded">
-                        <p>Python Applicatieontwikkeling met Automatisatie en Dataverwerking</p>
+            <main class="col-12 col-md-9">
+
+                <article class="mb-5">
+                    <img src="assets/project1.jpg" alt="project1" class="img-fluid rounded shadow mb-3"
+                        style="max-width: 200px; height: 200px; object-fit: cover;">
+                        <figcaption class="h6 small mt-2 text-start">&copy; pexels.com</figcaption>
+                    <h2 class="h3 mb-3">Architectuur van Besturingssystemen</h2>
+                    <p class="mb-3">Bij dit project verdiepte ik me in de werking en opbouw van verschillende
+                        besturingssystemen. Ik begon met het analyseren van de basisarchitectuur: kernel, drivers,
+                        processen en geheugenbeheer. Daarna vergeleek ik hoe Windows, Linux en macOS deze onderdelen op
+                        hun eigen manier aanpakken.</p>
+
+                    <p class="mb-3"> Vooral het verschil tussen de monolithische kernel van Linux en de hybride kernel
+                        van Windows vond ik boeiend. Tijdens het installeren van de systemen lette ik op partities,
+                        bestandssystemen en bootloaders. Ik testte hoe elk besturingssysteem omgaat met hardwaredetectie
+                        en systeemupdates. Ook onderzocht ik welke tools en functies ze aanbieden voor beheer, zoals
+                        PowerShell, systemctl of de macOS Terminal. </p>
+
+                    <p class="mb-3">Door meerdere virtuele machines op te zetten, kon ik veilig experimenteren en
+                        systemen naast elkaar vergelijken. Dit eerste deel legde de technische fundamenten bloot en gaf
+                        een duidelijk inzicht in hoe een OS eigenlijk functioneert.
+
+                    </p>
+                </article>
+
+
+                <article class="mb-5">
+                    <img src="assets/project11.jpg" alt="project11" class="img-fluid rounded shadow mb-3"
+                        style="max-width: 200px; height: 200px; object-fit: cover;">
+                        <figcaption class="h6 small mt-2 text-start">&copy; pexels.com</figcaption>
+                    <h3 class=" mb-3">Praktisch Systeembeheer, Prestatiemetingen en Vergelijkende Analyse van
+                        Besturingssystemen</h3>
+                    <p class="mb-3">Na het analyseren van de architectuur richtte ik me op de praktische beheertaken
+                        binnen elk besturingssysteem. Ik begon met het configureren van gebruikersrechten en
+                        security-policies om te zien hoe strikt elk platform hiermee omgaat. Daarna onderzocht ik de
+                        netwerkstacks en testte ik hoe DHCP, DNS en routing in elk systeem worden aangestuurd. Ik
+                        vergeleek hun logging-mechanismen en keek vooral naar welke tools het meest inzicht gaven
+                        tijdens foutanalyse. Vervolgens voerde ik performance-tests uit om CPU-planning, I/O-afhandeling
+                        en geheugengebruik te meten. </p>
+
+                    <p class="mb-3">Ik merkte duidelijke verschillen in hoe efficiënt Linux processen behandelt in
+                        vergelijking met Windows onder zware belasting. Ook dook ik in virtualisatie-opties zoals
+                        Hyper-V, VirtualBox en QEMU/KVM om te zien welk OS de beste ondersteuning bood. </p>
+
+                    <p class="mb-3">Daarna documenteerde ik alle configuraties zodat ik ze later kon reproduceren of
+                        aanpassen. Tot slot evalueerde ik de stabiliteit, flexibiliteit en beheergemak van elk systeem
+                        in een realistische werkomgeving. Dit deel gaf me een diepgaand begrip van OS-beheer en maakte
+                        de verschillen tussen de platformen glashelder.</p>
+                </article>
+            </main>
+
+
+            <aside class="col-12 col-md-3 border-start ps-4">
+                <h4 class="mb-4 text-uppercase h3">Overige projecten</h4>
+                <a href="project1.html" class="text-decoration-none">
+                    <article class="mb-3">
+                        <img src="assets/project1.jpg" alt="project1" class="img-fluid w-100 rounded">
+                        <figcaption class="h6 small mt-2 text-start">&copy; pexels.com</figcaption>
+                        <p>netwerkrack samenstellen en configureren</p>
                     </article>
                 </a>
-                <a href="project5.html">
-                    <article class="mb-3" type="button"><img src="assets/project5.jpg" alt="project5"
-                            class="img-fluid w-100 rounded">
-                        <p>Gestructureerde Bekabeling en Professioneel Netwerkontwerp</p>
+                <a href="project6.html" class="text-decoration-none">
+                    <article class="mb-3">
+                        <img src="assets/project6.jpg" alt="project6" class="img-fluid w-100 rounded">
+                        <figcaption class="h6 small mt-2 text-start">&copy; pexels.com</figcaption>
+                        <p>samenstellen van een pc</p>
                     </article>
                 </a>
-                <a href="project6.html">
-                    <article class="mb-3" type="button"><img src="assets/project6.jpg" alt="project6"
-                            class="img-fluid w-100 rounded">
-                        <p>Python Applicatieontwikkeling met Automatisatie en Dataverwerking</p>
+                <a href="project3.html" class="text-decoration-none">
+                    <article class="mb-3">
+                        <img src="assets/project3.jpg" alt="project3" class="img-fluid w-100 rounded">
+                        <figcaption class="h6 small mt-2 text-start">&copy; pexels.com</figcaption>
+                        <p>linux Serverbeheer</p>
                     </article>
                 </a>
             </aside>
         </div>
-    </main>
-    <footer class="container-fluid bg-light text-center h6 small p-4 mt-5">&copy; MijnPortfolio -
+    </div>
+    <footer class="container-fluid bg-light text-center h6 small p-4 mt-5">&copy; <span id="year"></span> MijnPortfolio -
         Powered by Rayane Erachidi
     </footer>
 </body>
