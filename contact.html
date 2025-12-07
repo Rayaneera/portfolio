@@ -70,31 +70,33 @@
                 <h1 class="text-uppercase mb-3 p-3 h2">contact</h1>
                 <p class="p-3 h5">Neem hier contact met ons op</p>
 
-                <fieldset class="row g-3 mb-3 mt-3">
+                <form name="contact" method="post" data-netlify="true" action="/contact.html" class="p-5">
+                    <input type="hidden" name="form-name" value="contact">
 
-                    <form name="contact" method="post" class=" p-5" data-netlify="true" action="/contact.html">
-                        <input type="hidden" name="form-name" value="contact">
-
+                    <fieldset class="row g-3 mb-3 mt-3">
                         <div class="mb-3">
                             <label for="voornaam" class="form-label">Voornaam</label>
-                            <input type="text" id="voornaam" name="voornaam" class="form-control" required>
+                            <input type="text" id="voornaam" name="voornaam" class="form-control">
                         </div>
+
                         <div class="mb-3">
                             <label for="achternaam" class="form-label">Achternaam</label>
-                            <input type="text" id="achternaam" name="achternaam" class="form-control" required>
+                            <input type="text" id="achternaam" name="achternaam" class="form-control">
                         </div>
+
                         <div class="mb-3">
-                            <label for="e-mail" class="form-label">E-mail</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control">
                         </div>
+
                         <div class="mb-3">
                             <label for="bericht" class="form-label">Bericht</label>
                             <textarea name="bericht" id="bericht" rows="4" class="form-control"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Verzend</button>
-                    </form>
-                </fieldset>
+                    </fieldset>
+                </form>
             </section>
 
             <aside class="col-12 col-lg-4 border-top border-lg-start border-lg-top-0 pt-4 pt-lg-0">
